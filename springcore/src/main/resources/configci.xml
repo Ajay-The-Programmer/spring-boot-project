@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
        xmlns:context="http://www.springframework.org/schema/context"
 
        xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean class="com.springcore.Student" name="student1">
-        <property name="studentId" value="123"/>
-        <property name="studentName" value="ajay devkar"/>
-        <property name="studentAddress" value="bodwad"/>
-
+    <bean class="com.springcore.ci.Certi" name="certi">
+        <constructor-arg value="javaCertificate"/>
     </bean>
-
-
+    <bean class="com.springcore.ci.Person" name="person">
+        <constructor-arg value="Ajay"/>
+        <constructor-arg value="09"/>
+        <constructor-arg ref="certi"/>
+    </bean>
 </beans>
