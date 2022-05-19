@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
 
        xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean name="emp1" class="com.springcore.collection.Emp">
         <property name="name" value="Ajay"/>
         <property name="phones">
-            <value>7798325001</value>
+            <value>1234</value>
 
 <!--            <list>-->
 <!--                <value>12345</value>-->
@@ -34,6 +33,13 @@
 
             </map>
         </property>
+        <property name="props">
+            <props>
+                <prop key="name">Ajay</prop>
+                <prop key="surname">devkar</prop>
+            </props>
+        </property>
+
     </bean>
 
 </beans>

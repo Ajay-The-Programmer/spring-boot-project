@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
 
        xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans.xsd">
@@ -10,12 +9,12 @@
         <property name="phones">
             <value>1234</value>
 
-            <list>
-                <value>12345</value>
-                <value>123456</value>
-                <null/>
+<!--            <list>-->
+<!--                <value>12345</value>-->
+<!--                <value>123456</value>-->
+<!--                <null/>-->
 
-            </list>
+<!--            </list>-->
 
         </property>
         <property name="addresses">
@@ -34,6 +33,13 @@
 
             </map>
         </property>
+        <property name="props">
+            <props>
+                <prop key="name">Ajay</prop>
+                <prop key="surname">devkar</prop>
+            </props>
+        </property>
+
     </bean>
 
 </beans>
