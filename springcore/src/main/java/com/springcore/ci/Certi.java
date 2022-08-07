@@ -1,5 +1,8 @@
 package com.springcore.ci;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Certi {
      String name;
 
